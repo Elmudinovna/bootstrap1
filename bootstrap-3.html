@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshop</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" href="man.css">
+</head>
+<body>
+<div class="navbar navbar-expand-lg navbar-dark bg-dark nb">
+    <span class="navbar-brand">BOOK<img src="images/book-icon.png" width="50" height="50" alt="logo">CASE
+  </span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <span class="navbar-text mx-4">
+    +7-977-803-02-95
+</span>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+      </li>
+  <!-- Первая выпадающая кнопка -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Новые книги
+        </a>
+        <!-- Меню выпадающей кнопки -->
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Новинки</a>
+          <a class="dropdown-item" href="#">Популярные</a>
+          <a class="dropdown-item" href="#">Разделы</a>
+         </div>
+      </li>
+ <!-- Первая выпадающая кнопка -->
+ <!-- Вторая выпадающая кнопка - -->
+ <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Обмен
+  </a>
+  <!-- Меню выпадающей кнопки -->
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="#">Новинки</a>
+    <a class="dropdown-item" href="#">Популярные</a>
+    <a class="dropdown-item" href="#">Разделы</a>
+    <a class="dropdown-item" href="#">Все условия обмена</a>
+    </div>
+</li>
+<!-- Вторая выпадающая кнопка-конец -->
+<!-- Третья выпадающая кнопка - -->
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Информация
+  </a>
+  <!-- Меню выпадающей кнопки -->
+  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+    <a class="dropdown-item" href="#">О проекте</a>
+    <a class="dropdown-item" href="#">Контакты</a>
+    <a class="dropdown-item" href="#">Доставка и оплата</a>
+</li>
+<!-- Третья выпадающая кнопка-конец --> 
+    </ul>
+    <form class="form-inline">
+      <input class="form-control" type="search" placeholder="Поиск книг..." aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Поиск</button>
+    </form>
+ <!--конец ссылок навигации  -->
+   </div>
+  </div>
+<!-- конец панели навигации --> 
+  </div>
+  <br>
+  <ul class="nav gen">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Художественная литература</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Научно-популярные книги</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Детские книги</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Учебная литература</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Психология и саморазвитие</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Другие разделы
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Бизнес-литература</a>
+        <a class="dropdown-item" href="#">Эксклюзивные издания</a>
+        <a class="dropdown-item" href="#">Хобби и досуг</a>
+        <a class="dropdown-item" href="#">Книжный развал</a>
+        <a class="dropdown-item" href="#">Товары для чтения</a>
+        <a class="dropdown-item" href="#">Календари 2020</a>
+        <a class="dropdown-item" href="#">Религиозная литература</a>
+        </div>
+    </li>
+    </li>
+  </ul>
+  <br>
+  <!-- конец навигации -->
+  <!-- Карусель -->
+<div class="container-fluid d">
+  <div class="row">
+    <div class="col-8">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <a href="#"> <img src="images/baner1.jpg" class="d-block w-100" alt="advertisement1"></a>
+      </div>
+      <div class="carousel-item">
+        <img src="images/baner2.jpg" class="d-block w-100" alt="advertisement2"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">  <img src="images/baner3.jpg" class="d-block w-100" alt="advertisement3"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">  <img src="images/baner4.jpg" class="d-block w-100" alt="advertisement4"></a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">  <img src="images/baner5.jpg" class="d-block w-100" alt="advertisement5"></a>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <button type="button" class="btn btn btn-block">Все актульные акции</button>
+</div>
+<div class="col-4 column">
+  <a href="#">  <img src="images/side1.jpg" alt="sideadvertisement1"> </a>
+  <a href="#"> <img src="images/side2.jpg" alt="sideadvertisement2"></a>
+</div>
+  </div>
+</div>
+<br><br>
+<!-- конец рекламы -->
+  <!-- Актуально -->
+  <div class="container-fluid rel">
+    <h4>АКТУАЛЬНО</h4>
+    <div class="row">
+      <!-- левая сторона -->
+      <div class="col-6 py-4">
+        <div class="row">
+          <!-- лево-лево -->
+       <div class="col-5">
+        <span class="badge badge-pill badge-danger">Бестселлер</span>
+       <a href="#"><img src="images/zlayakniga.jpg" width="250" height="374" alt="zlaya"></a> 
+        </div>
+        <!-- лево-право -->
+       <div class="col-7">
+    <a href="#"><h1>Маленькая злая книга 2</h1></a>
+        <p>Маленькая злая книга снова в деле! На этот раз она узнала сумасшедший секрет – нет, СЕКРЕТИЩЕ! И она жаждет поделиться им со своим читателем. Осторожно: от этой тайны легко сойти с ума! В неё просто невозможно поверить, но это действительно так… Если ты не трусливый зайка и любишь всё загадочное, необычное и увлекательное, то эта книга точно для тебя! Вместе с ней ты сможешь убежать от злодеев, решить кучу сложнейших загадок, прочесть захватывающие истории и узнаешь тако-о-о-е… Ну, чего ты ждёшь?! Скорее открывай первую страницу!
+        </p>
+        <p class="lead">Бестселлер по версии престижного журнала Spiegel!</p>
+        <h3 style="color:red">
+          290 руб.
+          <small class="text-muted" style="text-decoration: line-through">350 руб.</small> 
+        </h3>
+        <button type="button" class="btn btn-success">Купить</button>
+      </div>
+ </div>
+      </div>
+<!-- конец левой стороны -->
+<!-- правая сторона -->
+<div class="col-5 offset-1 py-5">
+  <div class="row">
+    <div class="col-6">
+     <a href="#"><img src="images/king.webp" width="250" height="320" alt="king"></a> 
+      <h4 style="color:red">
+        250 руб.
+        <small class="text-muted" style="text-decoration: line-through">350 руб.</small> 
+      </h4>
+      <h5>С. Кинг <br> "ОНО"</h5>
+      <button type="button" class="btn btn-success">Купить</button>
+    </div>
+    <div class="col-6">
+     <a href="#"> <img src="images/mal.webp" width="250" height="320" alt="mal">
+      <h4 style="color:red"></a>
+        150 руб.
+        <small class="text-muted" style="text-decoration: line-through">200 руб.</small> 
+      </h4>
+      <h5>Л. М. Олкотт <br> "МАЛЕНЬКИЕ ЖЕНЩИНЫ"</h5>
+      <button type="button" class="btn btn-success">Купить</button>
+      <br><br><br><br><br>
+    </div>
+    <button type="button" class="btn btn-secondary btn-lg btn-block">Еще больше предложений</button>  
+</div>
+</div>
+    </div>
+  </div>
+  <!-- конец Актуально -->
+  <!-- Подборки -->
+  <div class="container-fluid">
+<h4> ПОДБОРКИ РЕДАКЦИИ </h4>
+<div class="row">
+  <div class="col-3">
+    <div class="card" style="width: 18rem;">
+      <img src="images/card1.jpg" class="card-img-top" alt="card1">
+      <div class="card-body">
+        <h5 class="card-title">Самые ожидаемые книги</h5>
+        <a href="#" class="btn btn-primary">Вся подборка</a>
+      </div>
+    </div>
+</div>
+<div class="col-3">
+  <div class="card" style="width: 18rem;">
+    <img src="images/card2.jpg" class="card-img-top" alt="card1">
+    <div class="card-body">
+      <h5 class="card-title">Самые популярные книги мая</h5>
+      <a href="#" class="btn btn-primary">Вся подборка</a>
+    </div>
+  </div>
+</div>
+<div class="col-3">
+  <div class="card" style="width: 18rem;">
+    <img src="images/card3.jpg" class="card-img-top" alt="card2">
+    <div class="card-body">
+      <h5 class="card-title">Детские книги</h5>
+      <a href="#" class="btn btn-primary">Вся подборка</a>
+    </div>
+  </div>
+</div>
+<div class="col-3">
+  <div class="card" style="width: 18rem;">
+    <img src="images/card4.jpg" class="card-img-top" alt="card3">
+    <div class="card-body">
+      <h5 class="card-title">Классика школьникам</h5>
+      <a href="#" class="btn btn-primary">Вся подборка</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+  <!-- конец Подборки -->
+  <!-- новинки -->
+  <h4>НОВИНКИ</h4>
+<div class="row">
+  <div class="col-3">
+    <div class="card" style="width: 18rem;">
+      <a href="#"><img src="images/new1.jpg" class="card-img-top" alt="newbook1"></a>
+      <div class="card-body">
+        <a href="#" style="text-decoration: none;">  <h5 class="card-title">"Мой собственный Париж"</h5></a>
+        <p class="card-text">Браун Элеонора </p>
+        <p class="card-text" style="font-size: 20px;"><span class="badge badge-info">350 руб. </span> <small class="text-muted" style="text-decoration: line-through">407 руб.</small> </p>
+        <a href="#" class="btn btn-outline-dark">В корзину</a>
+      </div>
+    </div>
+  </div>
+<div class="col-3">
+  <div class="card" style="width: 18rem;">
+    <a href="#"><img src="images/new2.jpg" class="card-img-top" alt="newbook2"></a>
+    <div class="card-body">
+      <a href="#" style="text-decoration: none;">  <h5 class="card-title">"Девочка с Патриарших"</h5></a>
+      <p class="card-text">Рождественская Екатерина </p>
+      <p class="card-text" style="font-size: 20px;"><span class="badge badge-info">350 руб. </span> <small class="text-muted" style="text-decoration: line-through">400 руб.</small> </p>
+      <a href="#" class="btn btn-outline-dark">В корзину</a>
+    </div>
+  </div>
+</div>
+  <div class="col-3">
+    <div class="card" style="width: 18rem;">
+      <a href="#"><img src="images/new3.jpg" class="card-img-top" alt="newbook3"></a>
+      <div class="card-body">
+        <a href="#" style="text-decoration: none;">  <h5 class="card-title">"Gauguin: His Life and Works"</h5></a>
+        <p class="card-text"> издательство «Lorenz Books» </p>
+        <p class="card-text" style="font-size: 20px;"><span class="badge badge-info">1100 руб. </span> <small class="text-muted" style="text-decoration: line-through">1 365</small> </p>
+        <a href="#" class="btn btn-outline-dark">В корзину</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-3">
+    <div class="card" style="width: 18rem;">
+      <a href="#"><img src="images/new4.jpg" class="card-img-top" alt="newbook4"></a>
+      <div class="card-body">
+        <a href="#" style="text-decoration: none;">  <h5 class="card-title">Отстаньте от ребенка!"</h5></a>
+        <p class="card-text">  Мелия Мария </p>
+        <p class="card-text" style="font-size: 20px;"><span class="badge badge-info">395 руб. </span> <small class="text-muted" style="text-decoration: line-through">470</small> </p>
+        <a href="#" class="btn btn-outline-dark">В корзину</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--конец новинок  -->
+<!-- Присоединяйся -->
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-9 mt-4">
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">Присоединяйтесь к нашему клубу</h5>
+      <p class="card-text">Бонусы, скидки, спецпредложения, индивидуальные предложения - только для членов клуба!</p>
+      <div class="row justify-content-center mt-3">
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+      
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Имя пользователя</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Имя пользователя">
+        </div>
+        <div class="form-check mb-2 mr-sm-2">
+          <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+          <label class="form-check-label" for="inlineFormCheck">
+            Запомнить меня
+          </label>
+        </div>
+        <button type="submit" class="btn btn-info mb-2" style="color: white;">Вступить</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>  
+</div>
+</div>
+<!-- конец формы -->
+<!-- Люди и книги -->
+<div class="container-fluid">
+<div class="row mt-3">
+<div class="col-7">
+<h4>ЛЮДИ И КНИГИ</h4>
+<h6>Книжные рекомендации известных людей</h6>
+  «Люди и книги» - проект, участники которого делятся своей любовью к чтению и рассказывают о книгах, которые оказали на них влияние, помогли в разных жизненных ситуациях, заинтересовали, удивили, впечатлили. О книгах, которые хочется рекомендовать. О тех, которые вы знаете и любите, и о произведениях, которые после рассказа наших героев захотите прочитать.
+  <br><br><br>
+  <button type="button" class="btn btn-info">Узнать подробнее</button>
+</div>
+<div class="col-5">
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/piop1.jpg" class="d-block w-100" alt="Arbenina" style="border-radius: 50px;">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="h4" style="font-size: 20px;font-weight: bold;">Диана Арбенина</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/piop2-1.jpg" class="d-block w-100" alt="Arhangelskiy" style="border-radius: 50px;">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="h4" style="font-size: 20px;font-weight: bold;">Александр Архангельский</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/piop3-1.jpg" class="d-block w-100" alt="Gordeeva" style="border-radius: 50px;">
+        <div class="carousel-caption d-none d-md-block">
+          <p class="h4" style="font-size: 20px;font-weight: bold;">Катерина Гордеева</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!-- конец люди и книги -->
+<!--  Интересное -->
+<div class="container-fluid">
+<div class="row mt-3">
+  <div class="col-8 ">
+    <button type="button" class="btn btn-outline-dark active">Блог  </button>
+    <button type="button" class="btn btn-outline-dark">Подкаст</button>
+    <button type="button" class="btn btn-outline-dark">BOOKoтека</button>
+    <button type="button" class="btn btn-outline-dark">Новости</button>
+    <div class="row mt-3">
+    <div class="col-4">
+    <div class="card" style="width: 18rem;">
+      <img src="images/blog1.jpg" class="card-img-top" alt="blogimg1">
+      <div class="card-body">
+        <h5 class="card-title">«Куриный бульон для души: 6 интересных фактов</h5>
+        <p class="card-text">Слышали, что история вашей жизни может стать одним из рассказов серии? Мы собрали шесть интересных фактов об одном из самых продаваемых книжных сборников в мире и предлагаем с ними познакомиться.</p>
+        <a href="#" class="btn btn-primary">Дальше</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="card" style="width: 18rem;">
+      <img src="images/blog-2.jpg" class="card-img-top" alt="blogimg2">
+      <div class="card-body">
+        <h5 class="card-title">Неоднозначные героини русской классики</h5>
+        <p class="card-text">Многие героини отечественной классической литературы кажутся миллионам читателей своими или не своими, а их поступки и образ жизни вызывают многочисленные споры, возмущение и восхищение!</p>
+        <a href="#" class="btn btn-primary">Дальше</a>
+      </div>
+    </div>  
+    </div>
+  <div class="col-4">
+    <div class="card" style="width: 18rem;">
+      <img src="images/blog-3.png" class="card-img-top" alt="blogimg3">
+      <div class="card-body">
+        <h5 class="card-title">ТЕСТ: не знаете, что почитать? Мы подскажем!</h5>
+        <p class="card-text">Хороших книг так много, что иной раз трудно выбрать ту, которую сейчас больше всего хочется прочитать. У вас тоже так бывает? Давайте вместе определим книгу, которая подойдет именно вам! Ну, что готовы? Поехали!</p>
+        <a href="#" class="btn btn-primary">Дальше</a>
+      </div>
+    </div>  
+  </div>
+  </div>
+  </div>
+<div class="col-4 mt-5 pt-4">
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="images/news1-1.jpg" class="card-img" alt="vlastelin">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">6 нестыковок в фильмах "Властелин колец"</h5>
+          
+          <p class="card-text"><small class="text-muted">31 мая 2020г.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="images/news2.jpg" class="card-img" alt="books">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">ВИКТОРИНА: Кто автор этих русских произведений?</h5>
+          <p class="card-text"><small class="text-muted">28 мая 2020г.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-3" style="max-width: 540px;">
+    <div class="row no-gutters">
+      <div class="col-md-4">
+        <img src="images/news3.jpg" class="card-img" alt="lermontov">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">7 интересных фактов о Михаиле Лермонтове.</h5>
+          <p class="card-text"><small class="text-muted">25 мая 2020г.</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-secondary btn-lg btn-block ">Перейти в блог</button>
+</div>
+<div class="container-fluid">
+  <h4>ПОПУЛЯРНЫЕ РАЗДЕЛЫ</h4>
+<div class="row justify-content-around">
+  <figure class="figure">
+   <a href="#"> <img src="images/pop1.jpg" class="figure-img img-fluid rounded" alt="..."></a>
+    <figcaption class="figure-caption" style="font-weight: 700; color: black; font-size: 20px; text-align: center;">Детективы</figcaption>
+  </figure>
+  <figure class="figure">
+  <a href="#"> <img src="images/pop2.jpg" class="figure-img img-fluid rounded" alt="..."></a> 
+    <figcaption class="figure-caption"  style="font-weight: 700; color: black; font-size: 20px; text-align: center;">Современная проза</figcaption>
+  </figure>
+  <figure class="figure">
+    <a href="#"><img src="images/pop3.jpg" class="figure-img img-fluid rounded" alt="..."></a> 
+    <figcaption class="figure-caption"  style="font-weight: 700; color: black; font-size: 20px; text-align: center;">Зарубежное фентези</figcaption>
+  </figure>
+  <figure class="figure">
+    <a href="#"><img src="images/pop4.jpg" class="figure-img img-fluid rounded" alt="..."></a> 
+    <figcaption class="figure-caption"  style="font-weight: 700; color: black; font-size: 20px; text-align: center;">Фантастика</figcaption>
+  </figure>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-12" style="font-size: 20px; padding: 10px;">
+    <h4>ПОПУЛЯРНЫЕ ЗАПРОСЫ</h4>
+ <a href="#"><span class="badge badge-danger">Скидки и акции</span> </a>
+ <a href="#"><span class="badge badge-pill badge-success">Популярная психология</span></a>
+ <a href="#"><span class="badge badge-pill badge-light">Для подростков</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Зарубежное фентези</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Современная отечественная проза</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Современная зарубежная проза</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Личная эффективность</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Классическая зарубежная проза</span></a>
+ <a href="#"><span class="badge badge-pill badge-light">Детская литература</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Зарубежные детективы</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Зарубежная фантастика</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Сказки русских писателей</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Фантастика</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Сентиментальная зурубежная проза</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Эзотерика</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Кулинария</span></a>
+ <a href="#"><span class="badge badge-pill badge-success">Психология</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br><br>
+<!-- конец запросов -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="container-fluid foot">
+<div class="row">
+  <div class="col-4">
+    <ul>
+    <li><a href="#">Доставка</a></li>
+    <li><a href="#">Оплата</a></li>
+    <li> <a href="#">Политика возврата</a></li>
+    <li><a href="#">Часто задаваемые вопросы</a></li>
+    <li> <a href="#">Блог</a></li>
+    <li><a href="#">Скидки и акции</a></li>
+  </ul>
+  </div>
+  <div class="col-4">
+    <ul>
+      <li><a href="#">Партнерская программа</a></li>
+      <li><a href="#">Бонусная программа</a></li>
+      <li> <a href="#">Правила бонусной програмы</a></li>
+      <li><a href="#">Контактная информация</a></li>
+      <li> <a href="#">Политика обработки ПД</a></li>
+    </ul>
+  </div>
+  <div class="col-4">
+    <ul>
+      <li><a href="#">Пользовательское соглашение</a></li>
+      <li><a href="#">Оптовым клиентам</a></li>
+      <li> <a href="#">Карта сайта</a></li>
+      <li><a href="#">+7-977-803-02-95</a></li>
+      <li> <a href="#">market@bookcase.ru</a></li>
+    </ul>
+  </div>
+</div>
+  </div>
+  <hr>
+  <div class="container-fluid f">
+<div class="row">
+<div class="col-6" >
+  <p>Присоединяйтесь к нам в соцсетях</p>
+  <a href="#"><img src="images/vk.png" alt="vk"></a>
+  <a href="#"><img src="images/odn.png" alt="odnoklassniki"></a>
+  <a href="#"><img src="images/inst.png" alt="instagram"></a>
+  <a href="#"><img src="images/face.png" alt="facebook"></a>
+  <a href="#"><img src="images/wats.png" alt="watsup"></a>
+  <a href="#"><img src="images/viber.png" alt="vaiber"></a>
+  <a href="#"><img src="images/tel.png" alt="telegramm"></a>
+  <a href="#"><img src="images/twit.png" alt="twitter"></a>
+  <a href="#"><img src="images/goog.png" alt="googleplus"></a>
+</div>
+<div class="col-6">
+<p>Виды оплаты</p>
+<img src="images/vidioplata.png" alt="oplata">
+</div>
+</div>
+</div>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+</html>
+
